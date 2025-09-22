@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helping Hands NGO</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Custom Colors */
+    :root {
+      --primary-color: #4CAF50; /* Green */
+      --secondary-color: #f9f9f9; /* Light Gray */
+      --accent-color: #FF9800; /* Orange */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background: var(--primary-color);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .btn-accent {
+      background-color: var(--accent-color);
+      color: white;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
+    <div class="container">
+      <a class="navbar-brand" href="#">Helping Hands NGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Our Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#involve">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Helping Hands NGO</h1>
+    <p>Making the world a better place, one step at a time</p>
+    <a href="donate.html" class="btn btn-accent btn-lg">Donate Now</a>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-5" style="background-color: var(--secondary-color);">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="text-center mx-auto" style="max-width: 800px;">
+        We are a non-profit organization committed to uplifting communities through education, 
+        healthcare, and environmental initiatives. Our mission is to create sustainable change 
+        and empower people for a brighter future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Work / Causes -->
+  <section id="work" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Work</h2>
+      <div class="row g-4">
+        <!-- Cause 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-3">
+            <i class="bi bi-book-half display-3 text-success"></i>
+            <div class="card-body">
+              <h5 class="card-title mt-3">Education for All</h5>
+              <p class="card-text">We provide free books, classes, and scholarships to underprivileged children, ensuring that every child has access to quality education.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Cause 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-3">
+            <i class="bi bi-heart-pulse display-3 text-danger"></i>
+            <div class="card-body">
+              <h5 class="card-title mt-3">Healthcare Support</h5>
+              <p class="card-text">We organize free health checkups, awareness drives, and blood donation camps to support the well-being of communities in need.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Cause 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow text-center p-3">
+            <i class="bi bi-tree-fill display-3 text-success"></i>
+            <div class="card-body">
+              <h5 class="card-title mt-3">Environment Protection</h5>
+              <p class="card-text">We run tree plantation drives, clean water initiatives, and campaigns to raise awareness about protecting our planet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Involved -->
+  <section id="involve" class="py-5" style="background-color: var(--secondary-color);">
+    <div class="container text-center">
+      <h2 class="section-title">Get Involved</h2>
+      <p>You can make a difference! Volunteer with us, donate, or help spread awareness to support our causes.</p>
+      <a href="donate.html" class="btn btn-primary btn-lg">Join Us</a>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Helping Hands NGO. All Rights Reserved.</p>
+    <p>Email: info@example.com | Phone: +123 456 7890</p>
+  </footer>
+
+</body>
+</html>
